@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify:Web Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left hide">
+            <div class="close">
+                <img src="assets/close.svg" alt="close">
+            </div>
+            <div class="home">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify Logo"
+                        style="width: 30px; height: 20px;">Spotify
+                </div>
+                <ul>
+                    <li><img src="assets/home.svg" alt="Home" style="width: 20px; height: 20px;"> Home</li>
+                    <li><img src="assets/search.svg.svg" alt="Search" style="width: 20px; height: 20px;"> Search</li>
+                </ul>
+            </div>
+            <div class="library">
+                <img src="assets/playlist.svg" alt="Your Library" style="width: 20px; height: 20px;">
+                Your Library
+
+                <div class="library-playlists">
+                    <div class="playlist-item">
+                        <img src="https://th.bing.com/th/id/OIP.aOhn2VwFntQb9Z25lg4o-QHaHa?w=194&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            height="40px" width="40px" alt="Desi Hip-hop">
+                        <div class="playlist-info">
+                            <p>Chaar Diwari</p>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <img src="https://www.udiscovermusic.com/wp-content/uploads/2025/05/sabrina-carpenter-cover-1024x1024.jpg"
+                            height="40px" width="40px" alt="Love Songs">
+                        <div class="playlist-info">
+                            <p>Sabrina Carpenter</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://th.bing.com/th/id/OIP.UaZeJILNhe3q-zFzyfdRTgHaHa?w=186&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            height="40px" width="40px" alt="Love Songs">
+                        <div class="playlist-info">
+                            <p>Arpit Bala</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="data:image/webp;base64,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"
+                            height="40px" width="40px" alt="Love Songs">
+                        <div class="playlist-info">
+                            <p>Seedhe Maut</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://th.bing.com/th/id/OIP.H63XUNPQu39MoFAgH76w7AAAAA?w=172&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            height="40px" width="40px" alt="Love Songs">
+                        <div class="playlist-info">
+                            <p>Taylor Swift</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://th.bing.com/th/id/OIP.XWUCq34gYASe4sSiQcWG5QAAAA?w=193&h=193&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            height="40px" width="40px" alt="Love Songs">
+                        <div class="playlist-info">
+                            <p>Paradox</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://th.bing.com/th/id/OIP.Z_VBITC4hqqI-gej5JbifAHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            height="40px" width="40px" alt="Love Songs">
+                        <div class="playlist-info">
+                            <p>Sunidhi Chauhan</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://th.bing.com/th/id/OIP.xDuL5aO2A_xMxSBa_Mm1cgHaHa?w=183&h=183&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            height="40px" width="40px" alt="Love Songs">
+                        <div class="playlist-info">
+                            <p>Anuv Jain</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://th.bing.com/th/id/OIP.Z8UFwimV0vQj_PIEldZIxwHaHa?w=167&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            height="40px" width="40px" alt="Love Songs">
+                        <div class="playlist-info">
+                            <p>Diljit Doshanjh</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://th.bing.com/th/id/OIP.mm0T3S3J6ql8kCDQIOnwkwHaI6?w=152&h=183&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            height="40px" width="40px" alt="Love Songs">
+                        <div class="playlist-info">
+                            <p>Karan Aujla</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://th.bing.com/th/id/OIP.6PFBiE5ZAjmZ91nBFwo7MAHaHa?w=162&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            height="40px" width="40px" alt="Chill Vibes">
+                        <div class="playlist-info">
+                            <p>Ap Dillon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburger">
+                        <img src="assets/hamgurger.svg" alt="hamburger">
+                    </div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <button class="Sign-Up">Sign Up</button>
+                    <button class="Log-In">Log In</button>
+                </div>
+            </div>
+            <div class="SpotifyPlaylist">
+                <h2>Spotify Playlists</h2>
+                <div class="card-container">
+
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.5Eo8P8b45XohO8tHEJWmeAHaHa?w=171&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src=https://www.w3schools.com/tags/horse.mp3></audio>
+                        <h4>Desi Hip-hop</h4>
+                        <p>The top DHH playlist.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/6qtADmCOQ6a9NlpMULzJj9/en"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+                        <h4>Your Vibes</h4>
+                        <p>listen to your vibe tracks.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://www.udiscovermusic.com/wp-content/uploads/2025/05/sabrina-carpenter-cover-1024x1024.jpg"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio1.mp3.wav"></audio>
+                        <h4>Love songs</h4>
+                        <p>here are the love songs.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27304bf9d131e3d30ec172e838c" alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>Concert Vibes</h4>
+                        <p>Experience the energy of concerts.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2oBG74gAocPMFv6Ij9ykdo/en"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio3.mp3.mp3"></audio>
+                        <h4>Hip Hop Songs</h4>
+                        <p> listen to your favourite hip hop tracks.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da843d782a364e11474509aa8fa3"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio4.mp3.mp3"></audio>
+                        <h4>Anuv jain</h4>
+                        <p>listen to your favourite Anuv jain tracks.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://thepacepress.org/wp-content/uploads/2023/02/love-playlist-graphic.jpeg"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="https://www.w3schools.com/tags/horse.mp3"></audio>
+                        <h4>Love Songs</h4>
+                        <p>The top love songs playlist.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://marketplace.canva.com/EAF2xT2nNoA/2/0/800w/canva-orange-and-pink-80's-retro-party-dance-pop-music-playlist-cover-ehr2TGRCDK4.jpg"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>Party Hits</h4>
+                        <p>The top party playlist.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3Ni8jH-default.jpg"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>Arpit Bala</h4>
+                        <p>listen to Arpit bala.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273dbda7745fe8b4dbc77abdf43" alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>karioke</h4>
+                        <p>Have a vibe of karioke.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.FYVRBwbwu_dC2Hacf-Nm7QAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>DJ music</h4>
+                        <p>vibe on DJ.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.eSoVKHrosefxnjuKvDcH_gHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>Romantic songa</h4>
+                        <p>Just get the vibe of love.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://mosaic.scdn.co/640/ab67616d00001e02136f87f65afc5f0520b90b1bab67616d00001e0249c1949911566df218c5f0ddab67616d00001e024cb6180b38a7abcde34dd967ab67616d00001e02539e63485ab61d33b05fcdd0"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>Old songs</h4>
+                        <p>Enjoy the old vibe.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2733ddf7c485525cc0035eee93e" alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>Retro music</h4>
+                        <p>Enjoy the retro vibe.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://mosaic.scdn.co/640/ab67616d00001e023dd80c64a14ad9533b2f2335ab67616d00001e02873a173dda2555f9ef7b26a3ab67616d00001e02a2bd93f2ef2276223a936bd6ab67616d00001e02e488792447bc941c8d532b23"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>Early Bollywood</h4>
+                        <p>Enjoy the oarly bollywod.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://mosaic.scdn.co/640/ab67616d00001e02150ab16b1f08a04d07d3536dab67616d00001e02189948156c1fadd99af89f50ab67616d00001e024a965ed6f2ace8a657bc7e07ab67616d00001e02bbf886276cd90f8d60b56a01"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>HeartBroken</h4>
+                        <p>let your heart feels.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://mosaic.scdn.co/640/ab67616d00001e021c7bfe8d9d66076ac648c4a1ab67616d00001e026ba18599bba9a6685cb766a3ab67616d00001e02a34e041f770081b2ab716f40ab67616d00001e02c3dbcb00d6b26d01a6d6cdcc"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>New Songs</h4>
+                        <p>listen to new songs.</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://mosaic.scdn.co/640/ab67616d00001e020d3449f333a83a25feb423f8ab67616d00001e023303e064419fab7e8b6d09a8ab67616d00001e02ae7abe97f7020d657e87bbecab67616d00001e02da7d1408f8e776063963572f"
+                            alt="Playlist 1">
+                        <img class="play-btn" src="assets/play.svg" alt="Play Button">
+                        <audio src="assets/songs/audio2.mp3.wav"></audio>
+                        <h4>GenZ</h4>
+                        <p>Enjoy the GenZ vibe.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="playback">
+            <div class="song-info">
+            </div>
+
+            <div class="player-controls">
+                <img src="assets/previous.svg" alt="Previous Button" class="previous-btn">
+
+                <img src="assets/play2.svg" alt="Play Button" class="play-btn">
+
+                <img src="assets/next.svg" alt="Next Button" class="next-btn">
+            </div>
+
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="seek-bar" min="0" max="100" value="0">
+                <span id="duration">0:00</span>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
