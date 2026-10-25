@@ -404,6 +404,9 @@ h2 {
     object-fit: contain;
     cursor: pointer;
 }
+.playback*>{
+    background-color: #222;
+}
 
 .player-controls .previous-btn,
 .player-controls .next-btn {
@@ -469,7 +472,7 @@ h2 {
 .hide {
     display: none !important;
 }
-@media (max-width: 1200px) and (max-heigh: 1000px){
+@media (max-width: 1200px) and (max-height: 1000px){
     .left {
         position: fixed;
         top: 0;
