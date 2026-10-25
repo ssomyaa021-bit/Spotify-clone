@@ -469,7 +469,7 @@ h2 {
 .hide {
     display: none !important;
 }
-@media (max-width: 500px) and (max-heigh: 1000px){
+@media (max-width: 1200px) and (max-heigh: 1000px){
     .left {
         position: fixed;
         top: 0;
@@ -548,7 +548,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 500px) and (max-height: 900px) {
+@media screen and (max-width: 1200px) and (max-height: 900px) {
     .playback {
         position: fixed !important;
         bottom: 0 !important;
